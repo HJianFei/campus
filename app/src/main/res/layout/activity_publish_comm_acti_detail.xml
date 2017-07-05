@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray_efefee"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/iv_empty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/red_fd3c49" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_menuBar"
+            android:background="@color/red_fd3c49" >
+
+            <RelativeLayout
+                android:id="@+id/rl_back"
+                android:layout_width="@dimen/height_menuBar"
+                android:layout_height="match_parent" >
+
+                <ImageView
+                    android:layout_width="19dp"
+                    android:layout_height="19dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/icon_back_white" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="活动详情"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/textsize_topbar" />
+
+            <Button
+                android:id="@+id/btn_ok"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:background="@color/none_color"
+                android:gravity="center"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:text="确定"
+                android:textColor="@android:color/white"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size_line"
+                    android:background="@color/gray_efefee" />
+
+                <include layout="@layout/line_gray" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/size_line"
+                    android:layout_marginLeft="11dp"
+                    android:layout_marginRight="11dp"
+                    android:background="@color/gray_efefee" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="12dp"
+                    android:background="@color/gray_f8f8f8" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shape_rectangle_white_gray"
+                    android:orientation="vertical"
+                    android:padding="12dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="活动介绍:"
+                        android:textColor="@color/black_373737"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/et_summary"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:background="@color/none_color"
+                        android:gravity="top"
+                        android:hint="请输入活动介绍"
+                        android:maxLength="800"
+                        android:minHeight="100dp"
+                        android:textColor="@color/black_373737"
+                        android:textColorHint="@color/gray_a1a1a1"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_wordCount"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@color/gray_efefee"
+                    android:gravity="right"
+                    android:paddingRight="10dp"
+                    android:paddingTop="3dp"
+                    android:text="0/800"
+                    android:textColor="@color/gray_a1a1a1"
+                    android:textSize="12sp" />
+
+                <include layout="@layout/line_gray_d0d0d0" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="12dp"
+                    android:text="活动图片:"
+                    android:textColor="@color/black_373737"
+                    android:textSize="16sp" />
+
+                <ListView
+                    android:id="@+id/listView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:divider="@null"
+                    android:listSelector="@color/none_color"
+                    android:scrollbars="none" />
+
+                <Button
+                    android:id="@+id/btn_add"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_margin="20dp"
+                    android:background="@drawable/shape_rectangle_white_dashed"
+                    android:text="+ 添加图片"
+                    android:textColor="@color/gray_7d7d7d"
+                    android:textSize="14sp" />
+
+                <include layout="@layout/line_gray_d0d0d0" />
+
+                <TextView
+                    android:id="@+id/tv_picCount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/gray_efefee"
+                    android:gravity="right"
+                    android:paddingRight="10dp"
+                    android:paddingTop="3dp"
+                    android:paddingBottom="10dp"
+                    android:text="0/10"
+                    android:textColor="@color/gray_a1a1a1"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>

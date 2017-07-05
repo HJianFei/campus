@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    android:paddingRight="12dp" >
+
+    <RelativeLayout
+        android:layout_width="50dp"
+        android:layout_height="match_parent" >
+
+        <!-- <RelativeLayout -->
+        <!-- android:id="@+id/rl_circle" -->
+        <!-- android:layout_centerInParent="true" -->
+        <!-- android:layout_width="18dp" -->
+        <!-- android:layout_height="18dp" > -->
+
+
+        <!-- </RelativeLayout> -->
+
+        <ImageView
+            android:id="@+id/iv_line_down"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/iv_circle_gray"
+            android:layout_centerHorizontal="true"
+            android:background="@color/gray_dcdcdc" />
+
+        <ImageView
+            android:id="@+id/iv_line_top"
+            android:layout_width="0.8dp"
+            android:layout_height="22dp"
+            android:layout_centerHorizontal="true"
+            android:background="@color/gray_dcdcdc" />
+
+        <ImageView
+            android:id="@+id/iv_circle_gray"
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:layout_marginTop="22dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/deliver_gray" />
+
+        <ImageView
+            android:id="@+id/iv_circle_red"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/deliver_red" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="6dp" >
+
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:paddingRight="15dp"
+            android:text="包裹已送达"
+            android:textColor="@color/red_ff4045"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="10dp"
+            android:text="2016-06-25 12:00:00"
+            android:textColor="@color/red_ff4045"
+            android:textSize="12sp" />
+
+        <include layout="@layout/line_gray" />
+    </LinearLayout>
+
+</LinearLayout>

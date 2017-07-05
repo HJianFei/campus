@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_gridview"
+    android:layout_width="wrap_content"
+    android:layout_height="39dp"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <com.loosoo100.campus100.view.CircleView
+        android:id="@+id/cv_headShot_like"
+        style="@style/headShotCircleView"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/imgloading" />
+
+</LinearLayout>

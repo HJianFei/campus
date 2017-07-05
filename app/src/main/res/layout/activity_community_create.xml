@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/iv_empty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/red_fd3c49" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_menuBar"
+        android:background="@color/red_fd3c49" >
+
+        <RelativeLayout
+            android:id="@+id/rl_back"
+            android:layout_width="@dimen/height_menuBar"
+            android:layout_height="match_parent" >
+
+            <ImageView
+                android:layout_width="19dp"
+                android:layout_height="19dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/icon_back_white" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="创建社团"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/textsize_topbar" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="9dp"
+                    android:background="@color/gray_efefee" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="39dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingLeft="12dp" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="社团名称"
+                        android:textColor="@color/black"
+                        android:textSize="16sp" />
+
+                    <EditText
+                        android:id="@+id/et_communityName"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="15dp"
+                        android:background="@color/none_color"
+                        android:gravity="center_vertical"
+                        android:hint="请输入社团名称"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="9dp"
+                    android:background="@color/gray_efefee" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="12dp"
+                    android:gravity="center"
+                    android:text="社团属性"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="37dp"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:id="@+id/btn_school_attribute"
+                        android:layout_width="72dp"
+                        android:layout_height="24dp"
+                        android:background="@drawable/shape_gray_stroke"
+                        android:text="校级社团"
+                        android:textColor="@color/gray_b3b3b3" />
+
+                    <Button
+                        android:id="@+id/btn_major_attribute"
+                        android:layout_width="72dp"
+                        android:layout_height="24dp"
+                        android:layout_marginLeft="35dp"
+                        android:background="@drawable/shape_gray_stroke"
+                        android:text="院级社团"
+                        android:textColor="@color/gray_b3b3b3" />
+
+                    <Button
+                        android:id="@+id/btn_interest_attribute"
+                        android:layout_width="72dp"
+                        android:layout_height="24dp"
+                        android:layout_marginLeft="35dp"
+                        android:background="@drawable/shape_gray_stroke"
+                        android:text="兴趣社团"
+                        android:textColor="@color/gray_b3b3b3" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="12dp"
+                    android:gravity="center"
+                    android:text="社团类型"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="37dp"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:id="@+id/btn_sports"
+                        android:layout_width="72dp"
+                        android:layout_height="24dp"
+                        android:background="@drawable/shape_gray_stroke"
+                        android:text="体育竞技"
+                        android:textColor="@color/gray_b3b3b3" />
+
+                    <Button
+                        android:id="@+id/btn_arts"
+                        android:layout_width="72dp"
+                        android:layout_height="24dp"
+                        android:layout_marginLeft="35dp"
+                        android:background="@drawable/shape_gray_stroke"
+                        android:text="文化艺术"
+                        android:textColor="@color/gray_b3b3b3" />
+
+                    <Button
+                        android:id="@+id/btn_heart"
+                        android:layout_width="72dp"
+                        android:layout_height="24dp"
+                        android:layout_marginLeft="35dp"
+                        android:background="@drawable/shape_gray_stroke"
+                        android:text="爱心公益"
+                        android:textColor="@color/gray_b3b3b3" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="37dp"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:id="@+id/btn_practice"
+                        android:layout_width="72dp"
+                        android:layout_height="24dp"
+                        android:background="@drawable/shape_gray_stroke"
+                        android:text="社会实践"
+                        android:textColor="@color/gray_b3b3b3" />
+
+                    <Button
+                        android:id="@+id/btn_science"
+                        android:layout_width="72dp"
+                        android:layout_height="24dp"
+                        android:layout_marginLeft="35dp"
+                        android:background="@drawable/shape_gray_stroke"
+                        android:text="学术科研"
+                        android:textColor="@color/gray_b3b3b3" />
+
+                    <Button
+                        android:id="@+id/btn_interest"
+                        android:layout_width="72dp"
+                        android:layout_height="24dp"
+                        android:layout_marginLeft="35dp"
+                        android:background="@drawable/shape_gray_stroke"
+                        android:text="兴趣爱好"
+                        android:textColor="@color/gray_b3b3b3" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="37dp"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <Button
+                        android:id="@+id/btn_others"
+                        android:layout_width="72dp"
+                        android:layout_height="24dp"
+                        android:background="@drawable/shape_gray_stroke"
+                        android:text="其它"
+                        android:textColor="@color/gray_b3b3b3" />
+
+                    <Button
+                        android:layout_width="72dp"
+                        android:layout_height="24dp"
+                        android:layout_marginLeft="35dp"
+                        android:background="@color/none_color" />
+
+                    <Button
+                        android:layout_width="72dp"
+                        android:layout_height="24dp"
+                        android:layout_marginLeft="35dp"
+                        android:background="@color/none_color" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="12dp"
+                    android:gravity="center"
+                    android:text="社团架构"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <GridView
+                    android:id="@+id/gridview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:listSelector="@color/none_color"
+                    android:numColumns="4"
+                    android:scrollbars="none" >
+                </GridView>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="9dp"
+                    android:background="@color/gray_efefee" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="12dp"
+                    android:gravity="center"
+                    android:text="创建人信息"
+                    android:textColor="@color/black"
+                    android:textSize="16sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="27dp"
+                    android:layout_marginRight="27dp"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="33dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:text="姓名"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+                        <EditText
+                            android:id="@+id/et_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/none_color"
+                            android:gravity="center_vertical"
+                            android:hint="请输入姓名"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <include layout="@layout/line_gray" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="27dp"
+                    android:layout_marginRight="27dp"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="33dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:text="手机"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+                        <EditText
+                            android:id="@+id/et_phone"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/none_color"
+                            android:gravity="center_vertical"
+                            android:hint="请输入手机号码"
+                            android:inputType="phone"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <include layout="@layout/line_gray" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="27dp"
+                    android:layout_marginRight="27dp"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="33dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:text="微信"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+                        <EditText
+                            android:id="@+id/et_weixin"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/none_color"
+                            android:gravity="center_vertical"
+                            android:hint="请输入微信"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+
+                    <include layout="@layout/line_gray" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="27dp"
+                    android:layout_marginRight="27dp"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="33dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:text="QQ"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+
+                        <EditText
+                            android:id="@+id/et_qq"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@color/none_color"
+                            android:gravity="center_vertical"
+                            android:hint="请输入QQ"
+                            android:inputType="number"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="9dp"
+                    android:background="@color/gray_efefee" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="39dp"
+                    android:layout_marginLeft="27dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="推荐人"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/et_recommend"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="15dp"
+                        android:background="@color/none_color"
+                        android:gravity="center_vertical"
+                        android:hint="请输入推荐人手机号"
+                        android:inputType="number"
+                        android:maxLength="11"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btn_create"
+                    android:layout_width="match_parent"
+                    android:layout_height="39dp"
+                    android:layout_margin="12dp"
+                    android:background="@drawable/selector_btn_red"
+                    android:text="创        建"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+        </ScrollView>
+
+        <include
+            android:id="@+id/progress"
+            layout="@layout/progress_update_blackbg"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <!-- <ImageView -->
+    <!-- android:id="@+id/iv_empty2" -->
+    <!-- android:layout_width="match_parent" -->
+    <!-- android:layout_height="300dp" -->
+    <!-- android:visibility="gone" -->
+    <!-- android:background="@color/white" /> -->
+
+</LinearLayout>

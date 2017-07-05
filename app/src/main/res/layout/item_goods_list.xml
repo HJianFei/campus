@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_root"
+    android:layout_width="match_parent"
+    android:layout_height="81dp"
+    android:background="@drawable/selector_ll" >
+
+<!--     <ImageView -->
+<!--         android:layout_width="match_parent" -->
+<!--         android:layout_height="0.3dp" -->
+<!--         android:layout_alignParentBottom="true" -->
+<!--         android:layout_marginLeft="6dp" -->
+<!--         android:layout_marginRight="6dp" /> -->
+
+    <RelativeLayout
+        android:id="@+id/rl_goods"
+        android:layout_width="61dp"
+        android:layout_height="61dp"
+        android:background="@color/white"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="8dp" >
+
+        <ImageView
+            android:id="@+id/iv_goods"
+            android:layout_width="61dp"
+            android:layout_height="61dp"
+            android:layout_centerInParent="true"
+        android:background="@color/white"
+            android:scaleType="centerCrop"
+            android:src="@drawable/imgloading" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="81dp"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/rl_goods"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_goodsNameOrder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:singleLine="true"
+            android:text="王老吉凉茶310ML"
+            android:textSize="@dimen/textsize_list" />
+
+        <TextView
+            android:id="@+id/tv_currentPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:text="￥ 1.50"
+            android:textColor="@color/red_fd3c49"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_originalPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:text="￥ 3.00/盒"
+            android:textColor="@color/gray_bdbdbd"
+            android:textSize="11sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:gravity="bottom"
+        android:paddingBottom="10dp" >
+
+        <RelativeLayout
+            android:id="@+id/rl_reduce_root"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:orientation="horizontal"
+            android:visibility="visible" >
+
+            <RelativeLayout
+                android:id="@+id/rl_reduce"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:clickable="true" >
+
+                <ImageView
+                    android:id="@+id/ib_reduce_ll"
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/selector_btn_reduce" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_goodsCountOrder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="1"
+                android:textSize="@dimen/textsize_list" />
+
+            <RelativeLayout
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:clickable="true" >
+
+                <ImageView
+                    android:id="@+id/ib_add_ll"
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:layout_centerInParent="true"
+                    android:src="@color/none_color" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_add"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:clickable="true" >
+
+            <ImageView
+                android:id="@+id/ib_add_red"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/selector_btn_add" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

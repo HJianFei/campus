@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_line"
+        android:layout_marginLeft="15dp"
+        android:background="@color/gray_efefee" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/tv_goodsNameOrder"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="5"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="哈尔滨啤酒500ML"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_goodsCountOrder"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="1"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_goodsPriceOrder"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="15dp"
+            android:layout_weight="3"
+            android:gravity="center_vertical"
+            android:text="￥150元"
+            android:textColor="@color/red_fd3c49"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</LinearLayout>

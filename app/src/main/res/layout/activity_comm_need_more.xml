@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/iv_empty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/red_fd3c49" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_menuBar"
+        android:background="@color/red_fd3c49" >
+
+        <RelativeLayout
+            android:id="@+id/rl_back"
+            android:layout_width="@dimen/height_menuBar"
+            android:layout_height="match_parent" >
+
+            <ImageView
+                android:layout_width="19dp"
+                android:layout_height="19dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/icon_back_white" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="我的赞助需求"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/textsize_topbar" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <!-- <com.loosoo100.campus100.view.pulltorefresh.PtrLayout -->
+        <!-- android:id="@+id/refresh" -->
+        <!-- android:layout_width="match_parent" -->
+        <!-- android:layout_height="match_parent" > -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="暂无数据"
+            android:textColor="@color/gray_3e3e3e"
+            android:textSize="14sp" />
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:divider="@null"
+            android:scrollbars="none" >
+        </ListView>
+        <!-- </com.loosoo100.campus100.view.pulltorefresh.PtrLayout> -->
+
+        <include
+            android:id="@+id/rl_progress"
+            layout="@layout/progress"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</LinearLayout>

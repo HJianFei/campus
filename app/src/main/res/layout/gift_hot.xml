@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_hot"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="33dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="33dp"
+            android:background="@color/gray_f8f8f8"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btn_01"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/none_color"
+                android:text="送朋友"
+                android:textColor="@color/red_fd3c49"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/btn_02"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/none_color"
+                android:text="送情敌"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/btn_03"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/none_color"
+                android:text="送女友"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/btn_04"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/none_color"
+                android:text="送长辈"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/btn_05"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/none_color"
+                android:text="送闺蜜"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="33dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:weightSum="5" >
+
+            <RelativeLayout
+                android:id="@+id/rl_redCircle"
+                android:layout_width="0dp"
+                android:layout_height="25dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_red_25" >
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    
+    
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_hot"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+        
+        
+<!--     <RelativeLayout -->
+<!--         android:layout_width="match_parent" -->
+<!--         android:layout_height="match_parent" > -->
+
+<!--         <com.loosoo100.campus100.view.AbScrollView -->
+<!--             android:layout_width="match_parent" -->
+<!--             android:layout_height="match_parent" -->
+<!--             android:scrollbars="none" > -->
+
+<!--             <include layout="@layout/gift_hot_friend" /> -->
+<!--         </com.loosoo100.campus100.view.AbScrollView> -->
+<!--     </RelativeLayout> -->
+
+</LinearLayout>

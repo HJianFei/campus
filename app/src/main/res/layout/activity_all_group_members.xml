@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_all_group_members"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.loosoo100.campus100.chat.ui.AllGroupMembersActivity">
+
+    <ImageView
+        android:id="@+id/iv_empty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/red_fd3c49" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_menuBar"
+        android:background="@color/red_fd3c49">
+
+        <RelativeLayout
+            android:id="@+id/rl_back_group_detail"
+            android:layout_width="@dimen/height_menuBar"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="19dp"
+                android:layout_height="19dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/icon_back_white" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_school"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="全部群成员"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/textsize_topbar" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/all_group_members"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@color/gray_efefee"
+        android:dividerHeight="0.3dp" />
+</LinearLayout>

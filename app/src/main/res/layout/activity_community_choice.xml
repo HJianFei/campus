@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:id="@+id/rl_black"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0.8"
+            android:background="@color/black"
+            android:clickable="true" />
+
+        <LinearLayout
+            android:layout_width="192dp"
+            android:layout_height="131dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/shape_red"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/btn_create"
+                android:layout_width="144dp"
+                android:layout_height="43dp"
+                android:background="@drawable/shape_red_stoke"
+                android:text="创建社团"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/btn_join"
+                android:layout_width="144dp"
+                android:layout_height="43dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/shape_red_stoke"
+                android:text="加入社团"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

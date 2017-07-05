@@ -1,0 +1,965 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <com.loosoo100.campus100.view.pulltorefresh.PtrLayout
+            android:id="@+id/refresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="true"
+            android:focusableInTouchMode="true" >
+
+            <com.loosoo100.campus100.view.MyScrollView
+                android:id="@+id/scrollview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="none" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp" >
+
+                        <com.loosoo100.campus100.view.viewpager.autoscroll.AutoScrollViewPager
+                            android:id="@+id/viewpager_home"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+                        <!-- <android.support.v4.view.ViewPager -->
+                        <!-- android:id="@+id/viewpager_home" -->
+                        <!-- android:layout_width="match_parent" -->
+                        <!-- android:layout_height="@dimen/height_viewPager" /> -->
+
+                        <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="15dp"
+                            android:layout_alignParentBottom="true"
+                            android:background="@drawable/curve" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="5dp"
+                            android:orientation="horizontal" >
+
+                            <ImageButton
+                                android:id="@+id/iv_circle01"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="#00000000"
+                                android:src="@drawable/circle_point_color" />
+
+                            <ImageButton
+                                android:id="@+id/iv_circle02"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:background="#00000000"
+                                android:src="@drawable/circle_point" />
+
+                            <ImageButton
+                                android:id="@+id/iv_circle03"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="10dp"
+                                android:background="#00000000"
+                                android:src="@drawable/circle_point" />
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="81dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <LinearLayout
+                            android:id="@+id/ll_comm"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical" >
+
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/icon_home_comm" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:alpha="0.9"
+                                android:text="本校社团"
+                                android:textColor="@color/black"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_acti"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical" >
+
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/icon_home_acti" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:alpha="0.9"
+                                android:text="社团活动"
+                                android:textColor="@color/black"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_party"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical" >
+
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/icon_home_party" />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:alpha="0.9"
+                                android:text="物资中心"
+                                android:textColor="@color/black"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/ll_heart"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:orientation="vertical" >
+
+                            <ImageView
+                                android:layout_width="40dp"
+                                android:layout_height="40dp"
+                                android:scaleType="centerCrop"
+                                android:src="@drawable/icon_home_heart" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="5dp"
+                                android:alpha="0.9"
+                                android:text="校园爱心"
+                                android:textColor="@color/black"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <include layout="@layout/line_gray_8dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="29dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingLeft="12dp" >
+
+                        <ImageView
+                            android:layout_width="12dp"
+                            android:layout_height="12dp"
+                            android:src="@drawable/icon_star_blue" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3dp"
+                            android:text="校花校草评比"
+                            android:textColor="@color/black"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/iv_expand_pictureWall"
+                        android:layout_width="match_parent"
+                        android:layout_height="108dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@color/none_color" />
+
+                    <include layout="@layout/line_gray_8dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="29dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingLeft="12dp" >
+
+                        <ImageView
+                            android:layout_width="12dp"
+                            android:layout_height="12dp"
+                            android:src="@drawable/icon_finger_yellow" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3dp"
+                            android:layout_weight="1"
+                            android:text="最热门活动"
+                            android:textColor="@color/black"
+                            android:textSize="10sp" />
+
+                        <Button
+                            android:id="@+id/btn_more_acti"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/selector_ll"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:text="更多"
+                            android:textColor="@color/black"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+
+                    <include layout="@layout/line_gray" />
+
+                    <ListView
+                        android:id="@+id/lv_acti"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:divider="@null"
+                        android:listSelector="@color/none_color"
+                        android:scrollbars="none" />
+
+                    <include layout="@layout/line_gray_8dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="29dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingLeft="12dp" >
+
+                        <ImageView
+                            android:layout_width="12dp"
+                            android:layout_height="12dp"
+                            android:src="@drawable/icon_light_blue" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3dp"
+                            android:layout_weight="1"
+                            android:text="最活跃社团"
+                            android:textColor="@color/black"
+                            android:textSize="10sp" />
+
+                        <Button
+                            android:id="@+id/btn_more_comm"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/selector_ll"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:text="更多"
+                            android:textColor="@color/black"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+
+                    <include layout="@layout/line_gray" />
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:scrollbars="none" >
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="55dp"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:paddingLeft="12dp"
+                            android:paddingRight="12dp" >
+
+                            <LinearLayout
+                                android:id="@+id/ll_community01"
+                                android:layout_width="117dp"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal" >
+
+                                <com.loosoo100.campus100.view.CircleView
+                                    android:id="@+id/cv_comm01"
+                                    style="@style/headShotCircleView"
+                                    android:layout_width="48dp"
+                                    android:layout_height="48dp"
+                                    android:src="@drawable/imgloading"
+                                    app:border_color="@color/red_fd3c49"
+                                    app:border_width="1dp" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="3dp"
+                                    android:gravity="center_vertical"
+                                    android:orientation="vertical" >
+
+                                    <TextView
+                                        android:id="@+id/tv_comm01"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:singleLine="true"
+                                        android:text="无敌动漫社"
+                                        android:textColor="@color/black"
+                                        android:textSize="12sp" />
+
+                                    <TextView
+                                        android:id="@+id/tv_address01"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:singleLine="true"
+                                        android:text="广东广州"
+                                        android:textColor="@color/black"
+                                        android:textSize="8sp" />
+
+                                    <TextView
+                                        android:id="@+id/tv_school01"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:singleLine="true"
+                                        android:text="广州大学"
+                                        android:textColor="@color/black"
+                                        android:textSize="8sp" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/ll_community02"
+                                android:layout_width="117dp"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal" >
+
+                                <com.loosoo100.campus100.view.CircleView
+                                    android:id="@+id/cv_comm02"
+                                    style="@style/headShotCircleView"
+                                    android:layout_width="48dp"
+                                    android:layout_height="48dp"
+                                    android:src="@drawable/imgloading"
+                                    app:border_color="@color/red_fd3c49"
+                                    app:border_width="1dp" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="3dp"
+                                    android:gravity="center_vertical"
+                                    android:orientation="vertical" >
+
+                                    <TextView
+                                        android:id="@+id/tv_comm02"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:singleLine="true"
+                                        android:text="无敌动漫社"
+                                        android:textColor="@color/black"
+                                        android:textSize="12sp" />
+
+                                    <TextView
+                                        android:id="@+id/tv_address02"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:singleLine="true"
+                                        android:text="广东广州"
+                                        android:textColor="@color/black"
+                                        android:textSize="8sp" />
+
+                                    <TextView
+                                        android:id="@+id/tv_school02"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:singleLine="true"
+                                        android:text="广州大学"
+                                        android:textColor="@color/black"
+                                        android:textSize="8sp" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/ll_community03"
+                                android:layout_width="117dp"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal" >
+
+                                <com.loosoo100.campus100.view.CircleView
+                                    android:id="@+id/cv_comm03"
+                                    style="@style/headShotCircleView"
+                                    android:layout_width="48dp"
+                                    android:layout_height="48dp"
+                                    android:src="@drawable/imgloading"
+                                    app:border_color="@color/red_fd3c49"
+                                    app:border_width="1dp" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="3dp"
+                                    android:gravity="center_vertical"
+                                    android:orientation="vertical" >
+
+                                    <TextView
+                                        android:id="@+id/tv_comm03"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:singleLine="true"
+                                        android:text="无敌动漫社"
+                                        android:textColor="@color/black"
+                                        android:textSize="12sp" />
+
+                                    <TextView
+                                        android:id="@+id/tv_address03"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:singleLine="true"
+                                        android:text="广东广州"
+                                        android:textColor="@color/black"
+                                        android:textSize="8sp" />
+
+                                    <TextView
+                                        android:id="@+id/tv_school03"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:singleLine="true"
+                                        android:text="广州大学"
+                                        android:textColor="@color/black"
+                                        android:textSize="8sp" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/ll_community04"
+                                android:layout_width="117dp"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal" >
+
+                                <com.loosoo100.campus100.view.CircleView
+                                    android:id="@+id/cv_comm04"
+                                    style="@style/headShotCircleView"
+                                    android:layout_width="48dp"
+                                    android:layout_height="48dp"
+                                    android:src="@drawable/imgloading"
+                                    app:border_color="@color/red_fd3c49"
+                                    app:border_width="1dp" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="3dp"
+                                    android:gravity="center_vertical"
+                                    android:orientation="vertical" >
+
+                                    <TextView
+                                        android:id="@+id/tv_comm04"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:singleLine="true"
+                                        android:text="无敌动漫社"
+                                        android:textColor="@color/black"
+                                        android:textSize="12sp" />
+
+                                    <TextView
+                                        android:id="@+id/tv_address04"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:singleLine="true"
+                                        android:text="广东广州"
+                                        android:textColor="@color/black"
+                                        android:textSize="8sp" />
+
+                                    <TextView
+                                        android:id="@+id/tv_school04"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:singleLine="true"
+                                        android:text="广州大学"
+                                        android:textColor="@color/black"
+                                        android:textSize="8sp" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/ll_community05"
+                                android:layout_width="117dp"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal" >
+
+                                <com.loosoo100.campus100.view.CircleView
+                                    android:id="@+id/cv_comm05"
+                                    style="@style/headShotCircleView"
+                                    android:layout_width="48dp"
+                                    android:layout_height="48dp"
+                                    android:src="@drawable/imgloading"
+                                    app:border_color="@color/red_fd3c49"
+                                    app:border_width="1dp" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="3dp"
+                                    android:gravity="center_vertical"
+                                    android:orientation="vertical" >
+
+                                    <TextView
+                                        android:id="@+id/tv_comm05"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:singleLine="true"
+                                        android:text="无敌动漫社"
+                                        android:textColor="@color/black"
+                                        android:textSize="12sp" />
+
+                                    <TextView
+                                        android:id="@+id/tv_address05"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:singleLine="true"
+                                        android:text="广东广州"
+                                        android:textColor="@color/black"
+                                        android:textSize="8sp" />
+
+                                    <TextView
+                                        android:id="@+id/tv_school05"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:singleLine="true"
+                                        android:text="广州大学"
+                                        android:textColor="@color/black"
+                                        android:textSize="8sp" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/ll_community06"
+                                android:layout_width="117dp"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal" >
+
+                                <com.loosoo100.campus100.view.CircleView
+                                    android:id="@+id/cv_comm06"
+                                    style="@style/headShotCircleView"
+                                    android:layout_width="48dp"
+                                    android:layout_height="48dp"
+                                    android:src="@drawable/imgloading"
+                                    app:border_color="@color/red_fd3c49"
+                                    app:border_width="1dp" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="3dp"
+                                    android:gravity="center_vertical"
+                                    android:orientation="vertical" >
+
+                                    <TextView
+                                        android:id="@+id/tv_comm06"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:singleLine="true"
+                                        android:text="无敌动漫社"
+                                        android:textColor="@color/black"
+                                        android:textSize="12sp" />
+
+                                    <TextView
+                                        android:id="@+id/tv_address06"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:singleLine="true"
+                                        android:text="广东广州"
+                                        android:textColor="@color/black"
+                                        android:textSize="8sp" />
+
+                                    <TextView
+                                        android:id="@+id/tv_school06"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:singleLine="true"
+                                        android:text="广州大学"
+                                        android:textColor="@color/black"
+                                        android:textSize="8sp" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/ll_community07"
+                                android:layout_width="117dp"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal" >
+
+                                <com.loosoo100.campus100.view.CircleView
+                                    android:id="@+id/cv_comm07"
+                                    style="@style/headShotCircleView"
+                                    android:layout_width="48dp"
+                                    android:layout_height="48dp"
+                                    android:src="@drawable/imgloading"
+                                    app:border_color="@color/red_fd3c49"
+                                    app:border_width="1dp" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="3dp"
+                                    android:gravity="center_vertical"
+                                    android:orientation="vertical" >
+
+                                    <TextView
+                                        android:id="@+id/tv_comm07"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:singleLine="true"
+                                        android:text="无敌动漫社"
+                                        android:textColor="@color/black"
+                                        android:textSize="12sp" />
+
+                                    <TextView
+                                        android:id="@+id/tv_address07"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:singleLine="true"
+                                        android:text="广东广州"
+                                        android:textColor="@color/black"
+                                        android:textSize="8sp" />
+
+                                    <TextView
+                                        android:id="@+id/tv_school07"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:singleLine="true"
+                                        android:text="广州大学"
+                                        android:textColor="@color/black"
+                                        android:textSize="8sp" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/ll_community08"
+                                android:layout_width="117dp"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal" >
+
+                                <com.loosoo100.campus100.view.CircleView
+                                    android:id="@+id/cv_comm08"
+                                    style="@style/headShotCircleView"
+                                    android:layout_width="48dp"
+                                    android:layout_height="48dp"
+                                    android:src="@drawable/imgloading"
+                                    app:border_color="@color/red_fd3c49"
+                                    app:border_width="1dp" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="3dp"
+                                    android:gravity="center_vertical"
+                                    android:orientation="vertical" >
+
+                                    <TextView
+                                        android:id="@+id/tv_comm08"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:singleLine="true"
+                                        android:text="无敌动漫社"
+                                        android:textColor="@color/black"
+                                        android:textSize="12sp" />
+
+                                    <TextView
+                                        android:id="@+id/tv_address08"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:singleLine="true"
+                                        android:text="广东广州"
+                                        android:textColor="@color/black"
+                                        android:textSize="8sp" />
+
+                                    <TextView
+                                        android:id="@+id/tv_school08"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:singleLine="true"
+                                        android:text="广州大学"
+                                        android:textColor="@color/black"
+                                        android:textSize="8sp" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/ll_community09"
+                                android:layout_width="117dp"
+                                android:layout_height="match_parent"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal" >
+
+                                <com.loosoo100.campus100.view.CircleView
+                                    android:id="@+id/cv_comm09"
+                                    style="@style/headShotCircleView"
+                                    android:layout_width="48dp"
+                                    android:layout_height="48dp"
+                                    android:src="@drawable/imgloading"
+                                    app:border_color="@color/red_fd3c49"
+                                    app:border_width="1dp" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:layout_marginLeft="3dp"
+                                    android:gravity="center_vertical"
+                                    android:orientation="vertical" >
+
+                                    <TextView
+                                        android:id="@+id/tv_comm09"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:singleLine="true"
+                                        android:text="无敌动漫社"
+                                        android:textColor="@color/black"
+                                        android:textSize="12sp" />
+
+                                    <TextView
+                                        android:id="@+id/tv_address09"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:singleLine="true"
+                                        android:text="广东广州"
+                                        android:textColor="@color/black"
+                                        android:textSize="8sp" />
+
+                                    <TextView
+                                        android:id="@+id/tv_school09"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:singleLine="true"
+                                        android:text="广州大学"
+                                        android:textColor="@color/black"
+                                        android:textSize="8sp" />
+                                </LinearLayout>
+                            </LinearLayout>
+                        </LinearLayout>
+                    </HorizontalScrollView>
+
+                    <include layout="@layout/line_gray_8dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="29dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingLeft="12dp" >
+
+                        <ImageView
+                            android:layout_width="12dp"
+                            android:layout_height="12dp"
+                            android:src="@drawable/icon_hot_pink" />
+
+                        <TextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3dp"
+                            android:layout_weight="1"
+                            android:text="最给力企业"
+                            android:textColor="@color/black"
+                            android:textSize="10sp" />
+
+                        <Button
+                            android:id="@+id/btn_more_boss"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/selector_ll"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:text="更多"
+                            android:textColor="@color/black"
+                            android:textSize="10sp" />
+                    </LinearLayout>
+
+                    <include layout="@layout/line_gray" />
+
+                    <ListView
+                        android:id="@+id/lv_boss"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:divider="@null"
+                        android:listSelector="@color/none_color"
+                        android:scrollbars="none" />
+                </LinearLayout>
+            </com.loosoo100.campus100.view.MyScrollView>
+        </com.loosoo100.campus100.view.pulltorefresh.PtrLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/iv_empty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:alpha="0"
+                android:background="@color/red_fd3c49" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_menuBar" >
+
+                <RelativeLayout
+                    android:id="@+id/rl_topbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:alpha="0"
+                    android:background="@color/red_fd3c49"
+                    android:clickable="true" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_menuBar"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        android:id="@+id/ll_location"
+                        android:layout_width="@dimen/height_menuBar"
+                        android:layout_height="@dimen/height_menuBar"
+                        android:clickable="true"
+                        android:gravity="center_vertical" >
+
+                        <RelativeLayout
+                            android:layout_width="@dimen/height_menuBar"
+                            android:layout_height="match_parent" >
+
+                            <ImageView
+                                android:id="@+id/iv_loc_bg"
+                                android:layout_width="27dp"
+                                android:layout_height="27dp"
+                                android:layout_centerInParent="true"
+                                android:alpha="0.3"
+                                android:background="@drawable/shape_circle_black" />
+
+                            <ImageView
+                                android:id="@+id/iv_location"
+                                android:layout_width="19dp"
+                                android:layout_height="19dp"
+                                android:layout_centerInParent="true"
+                                android:layout_marginLeft="15dp"
+                                android:background="@drawable/icon_location" />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="48dp"
+                        android:layout_weight="1" >
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_centerInParent="true" >
+
+                            <TextView
+                                android:id="@+id/tv_location01"
+                                android:layout_width="wrap_content"
+                                android:layout_height="24dp"
+                                android:layout_centerInParent="true"
+                                android:alpha="0.3"
+                                android:background="@drawable/shape_black_location_bg"
+                                android:gravity="center"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:singleLine="true"
+                                android:text="@string/location_failed"
+                                android:textColor="@android:color/black"
+                                android:textSize="@dimen/textsize_topbar" />
+
+                            <TextView
+                                android:id="@+id/tv_location02"
+                                android:layout_width="wrap_content"
+                                android:layout_height="24dp"
+                                android:layout_centerInParent="true"
+                                android:ellipsize="marquee"
+                                android:focusable="true"
+                                android:focusableInTouchMode="true"
+                                android:gravity="center"
+                                android:marqueeRepeatLimit="1"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:scrollHorizontally="true"
+                                android:singleLine="true"
+                                android:text="@string/location_failed"
+                                android:textColor="@android:color/white"
+                                android:textSize="@dimen/textsize_topbar" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll_search"
+                        android:layout_width="@dimen/height_menuBar"
+                        android:layout_height="@dimen/height_menuBar"
+                        android:clickable="true"
+                        android:gravity="right|center_vertical" >
+
+                        <RelativeLayout
+                            android:layout_width="@dimen/height_menuBar"
+                            android:layout_height="match_parent" >
+
+                            <ImageView
+                                android:id="@+id/iv_search_bg"
+                                android:layout_width="27dp"
+                                android:layout_height="27dp"
+                                android:layout_centerInParent="true"
+                                android:alpha="0.3"
+                                android:background="@drawable/shape_circle_black" />
+
+                            <ImageView
+                                android:layout_width="18dp"
+                                android:layout_height="18dp"
+                                android:layout_centerInParent="true"
+                                android:background="@drawable/qrcode" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/iv_empty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/red_fd3c49" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_menuBar"
+        android:background="@color/red_fd3c49" >
+
+        <RelativeLayout
+            android:id="@+id/rl_back"
+            android:layout_width="@dimen/height_menuBar"
+            android:layout_height="match_parent" >
+
+            <ImageView
+                android:layout_width="19dp"
+                android:layout_height="19dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/icon_back_white" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="恋爱保险盒"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/textsize_topbar" />
+
+        <RelativeLayout
+            android:id="@+id/rl_question"
+            android:layout_width="@dimen/height_menuBar"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true" >
+
+            <ImageView
+                android:layout_width="19dp"
+                android:layout_height="19dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/question_mark" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+
+        <WebView
+            android:id="@+id/web"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layerType="software"
+            android:layout_height="match_parent" />
+
+<!--         <TextView -->
+<!--             android:id="@+id/tv01" -->
+<!--             android:layout_width="wrap_content" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             android:layout_alignParentBottom="true" -->
+<!--             android:layout_centerHorizontal="true" -->
+<!--             android:layout_marginBottom="50dp" -->
+<!--             android:alpha="0.8" -->
+<!--             android:scaleX="5" -->
+<!--             android:scaleY="0.8" -->
+<!--             android:text="^" -->
+<!--             android:textColor="@color/white" -->
+<!--             android:textSize="20sp" /> -->
+
+<!--         <TextView -->
+<!--             android:id="@+id/tv02" -->
+<!--             android:layout_width="wrap_content" -->
+<!--             android:layout_height="wrap_content" -->
+<!--             android:layout_alignParentBottom="true" -->
+<!--             android:layout_centerHorizontal="true" -->
+<!--             android:layout_marginBottom="60dp" -->
+<!--             android:alpha="0.8" -->
+<!--             android:scaleX="5" -->
+<!--             android:scaleY="0.8" -->
+<!--             android:text="^" -->
+<!--             android:textColor="@color/white" -->
+<!--             android:textSize="20sp" /> -->
+
+        <Button
+            android:id="@+id/btn_in"
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="60dp"
+            android:background="@drawable/selector_btn_pink"
+            android:text="进入"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+</LinearLayout>

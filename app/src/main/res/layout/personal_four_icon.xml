@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/height_menuBar"
+    android:background="@android:color/white"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:id="@+id/ll_campusOrder"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/height_menuBar"
+        android:layout_weight="1"
+        android:background="@drawable/selector_ll"
+        android:clickable="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="@dimen/size_iconFour"
+            android:layout_height="@dimen/size_iconFour"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="@dimen/space_iconBelow"
+            android:background="@drawable/cart" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="超市订单"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_giftOrder"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/height_menuBar"
+        android:layout_weight="1"
+        android:background="@drawable/selector_ll"
+        android:clickable="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:layout_width="@dimen/size_iconFour"
+            android:layout_height="@dimen/size_iconFour"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="@dimen/space_iconBelow"
+            android:background="@drawable/mygift" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="礼品清单"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_bus"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/height_menuBar"
+        android:layout_weight="1"
+        android:background="@drawable/selector_ll"
+        android:clickable="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ImageView
+            android:layout_width="@dimen/size_iconFour"
+            android:layout_height="@dimen/size_iconFour"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="@dimen/space_iconBelow"
+            android:background="@drawable/icon_bus" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="校园巴士"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_gogo"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/height_menuBar"
+        android:layout_weight="1"
+        android:background="@drawable/selector_ll"
+        android:clickable="true"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <ImageView
+            android:layout_width="@dimen/size_iconFour"
+            android:layout_height="@dimen/size_iconFour"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="@dimen/space_iconBelow"
+            android:background="@drawable/gogo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="我的GOGO"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+</LinearLayout>

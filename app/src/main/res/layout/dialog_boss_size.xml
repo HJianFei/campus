@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="250dp"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+
+        <Button
+            android:id="@+id/btn_size01"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/selector_ll"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="20dp"
+            android:text="0-50人"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <include layout="@layout/line_gray" />
+
+        <Button
+            android:id="@+id/btn_size02"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/selector_ll"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="20dp"
+            android:text="50-100人"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+        <include layout="@layout/line_gray" />
+
+        <Button
+            android:id="@+id/btn_size03"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/selector_ll"
+            android:gravity="left|center_vertical"
+            android:paddingLeft="20dp"
+            android:text="100人以上"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@drawable/selector_ll_f9f9f9"
+              android:gravity="center_vertical"
+              android:orientation="horizontal">
+
+
+    <com.loosoo100.campus100.view.CircleView
+        android:id="@+id/cv_headShot"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/imgloading"
+        app:border_color="@color/white"
+        app:border_width="1dp"/>
+
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="0dp"
+        android:layout_height="45dp"
+        android:layout_marginLeft="15dp"
+        android:layout_weight="1"
+        android:maxLines="1"
+        android:gravity="center_vertical"
+        android:text="昵称"
+        android:textColor="@color/black_373737"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/tv_noAvail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:text="无效"
+        android:visibility="gone"
+        android:textColor="@color/red_fd3c49"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/tv_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:text="手机号"
+        android:textColor="@color/gray_a1a1a1"
+        android:textSize="14sp"/>
+</LinearLayout>

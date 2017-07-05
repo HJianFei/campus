@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <LinearLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <ImageView
+            android:id="@+id/iv_empty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/red_fd3c49" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_menuBar"
+            android:background="@color/red_fd3c49" >
+
+            <RelativeLayout
+                android:id="@+id/rl_back"
+                android:layout_width="@dimen/height_menuBar"
+                android:layout_height="match_parent" >
+
+                <ImageView
+                    android:layout_width="19dp"
+                    android:layout_height="19dp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/icon_back_white" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:singleLine="true"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:text=""
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/textsize_topbar" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/bar_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/gray_f8f8f8"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/et_content"
+            android:layout_width="0dp"
+            android:layout_height="33dp"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/shape_white"
+            android:paddingLeft="3dp"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <RelativeLayout
+            android:layout_width="70dp"
+            android:layout_height="match_parent" >
+
+<!--             <ImageButton -->
+<!--                 android:id="@+id/ib_add" -->
+<!--                 android:layout_width="33dp" -->
+<!--                 android:layout_height="33dp" -->
+<!--                 android:layout_centerInParent="true" -->
+<!--                 android:background="@drawable/icon_custom_add" /> -->
+
+            <Button
+                android:id="@+id/btn_send"
+                android:layout_width="57dp"
+                android:layout_height="33dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/selector_btn_red"
+                android:text="发送"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv_consult"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bar_bottom"
+        android:layout_below="@id/top_bar"
+        android:divider="@null"
+        android:scrollbars="none"
+        android:stackFromBottom="true"
+        android:transcriptMode="alwaysScroll" >
+    </ListView>
+
+</RelativeLayout>

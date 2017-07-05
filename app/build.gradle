@@ -1,0 +1,87 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion '25.0.3'
+
+    defaultConfig {
+        applicationId "com.loosoo100.campus100"
+        minSdkVersion 17
+        targetSdkVersion 19
+        multiDexEnabled true
+        compileOptions {
+            sourceCompatibility JavaVersion.VERSION_1_7
+            targetCompatibility JavaVersion.VERSION_1_7
+        }
+
+        ndk {
+            //选择要添加的对应cpu类型的.so库。
+            abiFilters 'armeabi', 'armeabi-v7a', 'armeabi-v8a'
+            // 还可以添加 'x86', 'x86_64', 'mips', 'mips64'
+        }
+        manifestPlaceholders = [
+                JPUSH_PKGNAME: applicationId,
+                JPUSH_APPKEY : "48ae912d87beaa8ef6a82cc8", //JPush上注册的包名对应的appkey.
+                JPUSH_CHANNEL: "developer-default", //暂时填写默认值即可.
+        ]
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            signingConfig signingConfigs.debug
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+        debug {
+            minifyEnabled false
+            signingConfig signingConfigs.debug
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+
+    sourceSets {
+        main {
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+    signingConfigs {
+        debug {
+            storeFile file('campus100.keystore')
+            storePassword "loosoo123456"
+            keyAlias "loosoo"
+            keyPassword "loosoo123456"
+        }
+    }
+
+}
+
+dependencies {
+    compile files('libs/alipaySdk-20160516.jar')
+    compile files('libs/bolts-tasks-1.4.0.jar')
+    compile files('libs/eventbus.jar')
+    compile files('libs/glide-3.6.1.jar')
+    compile files('libs/IndoorscapeAlbumPlugin.jar')
+    compile files('libs/libammsdk.jar')
+    compile files('libs/nineoldandroids-2.4.0.jar')
+    compile files('libs/okhttp-2.3.0.jar')
+    compile files('libs/okio-1.8.0.jar')
+    compile files('libs/org.apache.http.legacy.jar')
+    compile files('libs/parse-android-1.13.0.jar')
+    compile files('libs/volley.jar')
+    compile files('libs/xcl-charts.jar')
+    compile files('libs/xUtils-2.6.14.jar')
+    compile files('libs/zxing.jar')
+    compile 'com.android.support:appcompat-v7:24.2.1'
+    compile 'com.android.support:support-v4:24.2.1'
+    compile 'com.android.support:multidex:1.0.1'
+    compile project(':IMKit')
+    compile files('libs/ormlite-android-5.0.jar')
+    compile files('libs/ormlite-core-5.0.jar')
+    compile 'cn.pedant.sweetalert:library:1.3'
+    compile 'cn.jiguang:jpush:2.1.8'
+    compile files('libs/BaiduLBS_Android.jar')
+    compile files('libs/AMap_Services_V2.5.0.jar')
+    compile files('libs/Android_2DMapApi_V2.5.0.jar')
+    compile files('libs/Android_Location_V1.3.3.jar')
+    compile files('libs/gson-2.7.jar')
+}

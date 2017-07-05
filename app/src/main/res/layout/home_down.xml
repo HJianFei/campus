@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:layout_width="65dp"
+                    android:visibility="gone"
+                    android:layout_height="33dp" >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="33dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="15dp"
+                            android:text="热"
+                            android:textColor="@color/red_fd3c49"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="门购"
+                            android:textColor="@color/black"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/tv_label_gallery"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:background="@drawable/icon_hot" />
+                </RelativeLayout>
+
+                <include layout="@layout/line_gray" />
+
+                <com.loosoo100.campus100.view.MyHorizontalListView
+                    android:id="@+id/gallery"
+                    android:layout_width="match_parent"
+                    android:layout_height="122dp"
+                    android:visibility="gone"
+                    android:background="@color/white" >
+                </com.loosoo100.campus100.view.MyHorizontalListView>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/gray_efefee" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp" >
+
+                    <ImageView
+                        android:layout_width="130dp"
+                        android:layout_height="18dp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/icon_red" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="18dp"
+                        android:layout_centerInParent="true"
+                        android:gravity="center"
+                        android:text="给你不一样的建议"
+                        android:textColor="@color/white"
+                        android:textSize="10sp" />
+                </RelativeLayout>
+
+                <ListView
+                    android:id="@+id/lv_gift_hot"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginRight="6dp"
+                    android:divider="@null"
+                    android:scrollbars="none" >
+                </ListView>
+            </LinearLayout>
+        </ScrollView>
+
+        <!-- <include -->
+        <!-- android:id="@+id/rl_pb_friend" -->
+        <!-- layout="@layout/progress" -->
+        <!-- android:visibility="gone" /> -->
+    </RelativeLayout>
+
+</LinearLayout>

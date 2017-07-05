@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/iv_empty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_menuBar"
+        android:background="@color/white" >
+
+        <RelativeLayout
+            android:id="@+id/rl_back"
+            android:layout_width="@dimen/height_menuBar"
+            android:layout_height="match_parent" >
+
+            <ImageView
+                android:layout_width="19dp"
+                android:layout_height="19dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/icon_back_black" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="消息"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textsize_topbar" />
+    </RelativeLayout>
+
+    <include layout="@layout/line_gray" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white_f9f9f9" >
+
+        <TextView
+            android:id="@+id/tv_nodata"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="暂无未读消息"
+            android:textColor="@color/gray_3e3e3e"
+            android:textSize="14sp" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+                <ListView
+                    android:id="@+id/lv_message"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white_f9f9f9"
+                    android:divider="@null"
+                    android:scrollbars="none" >
+                </ListView>
+
+                <ImageView
+                    android:id="@+id/iv_lineup"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/gray_efefee" />
+
+                <Button
+                    android:id="@+id/btn_more"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/selector_ll_f9f9f9"
+                    android:padding="10dp"
+                    android:text="查看更多消息..."
+                    android:textColor="@color/gray_3e3e3e"
+                    android:textSize="14sp" />
+
+                <ImageView
+                    android:id="@+id/iv_linedown"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/gray_efefee" />
+            </LinearLayout>
+        </ScrollView>
+
+        <include
+            android:id="@+id/progress_custom"
+            layout="@layout/progress_custom"
+            android:visibility="gone" />
+
+        <include
+            android:id="@+id/progress_update_whitebg"
+            layout="@layout/progress_update_whitebg"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</LinearLayout>

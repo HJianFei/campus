@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="red_fd3c49">#fd3c49</color>
+    <color name="red_ff003c">#ff003c</color>
+    <color name="red_ff8786">#ff8786</color>
+    <color name="red_ff0000">#ff0000</color>
+    <color name="red_ff4045">#ff4045</color>
+    <color name="red_a11e23">#a11e23</color>
+    <color name="red_c74004">#c74004</color>
+    <color name="blue_15a5e2">#15a5e2</color>
+    <color name="blue_00a2ff">#00a2ff</color>
+    <color name="gray_efefee">#efefee</color>
+    <color name="gray_606060">#606060</color>
+    <color name="gray_f8f8f8">#f8f8f8</color>
+    <color name="gray_bdbdbd">#bdbdbd</color>
+    <color name="line_below">#d0d0d0</color>
+    <!-- 积分底色外红 -->
+    <color name="red_out_ec2b30">#ec2b30</color>
+    <!-- 积分底色内红 -->
+    <color name="red_in_e1161a">#e1161a</color>
+    <!-- 商品分类名的背景颜色 -->
+    <color name="gray_goodscategory_bg">#fafafa</color>
+    <!-- 所有界面背景色 -->
+    <color name="white">#FFFFFF</color>
+    <!-- 白色50透明 -->
+    <color name="white_a50">#50FFFFFF</color>
+    <!-- 照片墙背景色 -->
+    <color name="FEEFC6">#FEEFC6</color>
+    <!-- 深灰 -->
+    <color name="darker_gray">#aaa</color>
+    <!-- 深灰 -->
+    <color name="darker_gray_404040">#404040</color>
+    <!-- 黑色 -->
+    <color name="black">#000000</color>
+    <!-- 黑色 -->
+    <color name="black_373737">#373737</color>
+    <!-- 黑色半透明 -->
+    <color name="black_a50">#50000000</color>
+    <!-- 黑色30透明 -->
+    <color name="black_a30">#30000000</color>
+    <!-- 黑色80透明 -->
+    <color name="black_a80">#80000000</color>
+    <!-- 灰色 -->
+    <color name="gray_d0d0d0">#d0d0d0</color>
+    <!-- 灰色 -->
+    <color name="gray_b3b3b3">#b3b3b3</color>
+    <!-- 灰色字体 -->
+    <color name="gray_5f5f5f">#5f5f5f</color>
+    <!-- 灰色字体 -->
+    <color name="gray_3e3e3e">#3e3e3e</color>
+    <!-- 灰色字体 -->
+    <color name="gray_dcdcdc">#dcdcdc</color>
+    <!-- 灰色字体 -->
+    <color name="gray_7d7d7d">#7d7d7d</color>
+    <!-- 灰色字体 -->
+    <color name="gray_767779">#767779</color>
+    <!-- 灰色字体 -->
+    <color name="gray_a1a1a1">#a1a1a1</color>
+    <!-- 淡黄色 -->
+    <color name="yellow_E3A517">#E3A517</color>
+    <!-- 橙色 -->
+    <color name="orange_F36C11">#F36C11</color>
+    <!-- 橙色 -->
+    <color name="orange_ffb14c">#ffb14c</color>
+    <!-- 橙色 -->
+    <color name="orange_ee761a">#ee761a</color>
+    <!-- 橙色车次字体颜色 -->
+    <color name="orange_bd7400">#bd7400</color>
+    <!-- 淡黄 -->
+    <color name="yellow_fcdd69">#fcdd69</color>
+    <!-- 淡黄 -->
+    <color name="yellow_ae6f00">#ae6f00</color>
+    <!-- 黄 -->
+    <color name="yellow_fdc045">#fdc045</color>
+    <!-- 黄 -->
+    <color name="yellow_ffff00">#ffff00</color>
+    <!-- 黄 -->
+    <color name="yellow_ffe9a4">#ffe9a4</color>
+    <!-- 黄 -->
+    <color name="yellow_fff45c">#fff45c</color>
+    <!-- 黄 -->
+    <color name="yellow_ff9000">#ff9000</color>
+    <!-- 绿色 -->
+    <color name="green_4ae25c">#4ae25c</color>
+    <!-- 绿色 -->
+    <color name="green_388d78">#388d78</color>
+    <!-- 蓝色 -->
+    <color name="blue_0090ff">#0090ff</color>
+    <!-- 蓝色 -->
+    <color name="blue_5ac8fa">#5ac8fa</color>
+    <!-- 蓝色 -->
+    <color name="blue_2ba0c8">#2ba0c8</color>
+    <!-- 蓝色 -->
+    <color name="blue_3ebde6">#3ebde6</color>
+    <!-- 蓝色 -->
+    <color name="blue_40aafe">#40aafe</color>
+    <!-- 蓝色 -->
+    <color name="blue_0000ff">#0000ff</color>
+    <!-- 蓝色 -->
+    <color name="blue_4687ff">#4687ff</color>
+    <!-- 蓝色 -->
+    <color name="blue_50cbd8">#50cbd8</color>
+    <!-- 课程表背景色 -->
+    <color name="blue_DFFAFE">#DFFAFE</color>
+    <!-- 透明 -->
+    <color name="none_color">#00000000</color>
+    <!-- 粉红色 -->
+    <color name="pink_FFAEAB">#FFAEAB</color>
+    <!-- 粉红色 -->
+    <color name="pink_FF5594">#FF5594</color>
+    <!-- 粉红色 -->
+    <color name="pink_FDE7D5">#FDE7D5</color>
+    <!-- 粉红色 -->
+    <color name="pink_ff7d80">#ff7d80</color>
+    <!-- 差不多白 -->
+    <color name="white_f9f9f9">#f9f9f9</color>
+    <!-- 绿色 -->
+    <color name="green_32b247">#32b247</color>
+    <!-- 绿色 -->
+    <color name="green_45C01A">#45C01A</color>
+    <!-- 绿色 -->
+    <color name="green_298409">#298409</color>
+    <!-- 蓝色 -->
+    <color name="blue_4cb4e4">#4cb4e4</color>
+
+</resources>

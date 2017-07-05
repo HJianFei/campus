@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical" >
+    
+    <TextView
+                android:id="@+id/tv_time"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:gravity="center"
+                android:background="@color/gray_d0d0d0"
+                android:text="09:30"
+                android:layout_marginTop="12dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textColor="@color/white"
+                android:textSize="10sp" />
+
+    <LinearLayout
+        android:id="@+id/ll_root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="left"
+        android:orientation="horizontal"
+        android:weightSum="3" >
+
+        <ImageView
+            android:id="@+id/iv_headShot"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:layout_marginLeft="9dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/imgloading" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2" >
+
+            <TextView
+                android:id="@+id/tv_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="9dp"
+                android:background="@drawable/consult_bg_left"
+                android:lineSpacingExtra="5dp"
+                android:paddingBottom="5dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="5dp"
+                android:paddingTop="5dp"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+<!--             <ImageView -->
+<!--                 android:id="@+id/iv_content" -->
+<!--                 android:layout_width="wrap_content" -->
+<!--                 android:layout_height="wrap_content" -->
+<!--                 android:layout_marginLeft="9dp" -->
+<!--                 android:src="@drawable/imgloading" /> -->
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_root_me"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:gravity="right"
+        android:orientation="horizontal"
+        android:weightSum="3" >
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2" >
+
+            <TextView
+                android:id="@+id/tv_content_me"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="9dp"
+                android:background="@drawable/consult_bg_right"
+                android:lineSpacingExtra="5dp"
+                android:paddingBottom="5dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="15dp"
+                android:paddingTop="5dp"
+                android:text=""
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+<!--             <ImageView -->
+<!--                 android:id="@+id/iv_content_me" -->
+<!--                 android:layout_width="wrap_content" -->
+<!--                 android:layout_height="wrap_content" -->
+<!--                 android:layout_alignParentRight="true" -->
+<!--                 android:layout_marginRight="9dp" -->
+<!--                 android:src="@drawable/imgloading" /> -->
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/iv_headShot_me"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:layout_marginRight="9dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/imgloading" />
+    </LinearLayout>
+
+</LinearLayout>

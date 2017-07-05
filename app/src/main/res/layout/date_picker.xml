@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="100dp"
+    android:layout_width="wrap_content"
+    android:clickable="false"
+    android:focusable="false"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <com.loosoo100.campus100.view.picker.NumberPicker
+        android:id="@+id/date_year"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" />
+
+    <com.loosoo100.campus100.view.picker.NumberPicker
+        android:id="@+id/date_month"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp" />
+
+    <com.loosoo100.campus100.view.picker.NumberPicker
+        android:id="@+id/date_day"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:clickable="true"
+        android:focusable="true" />
+
+</LinearLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="210dp"
+    android:layout_marginTop="340dp"
+    android:background="@color/white"
+    android:rotation="30" >
+
+    <RelativeLayout
+        android:layout_width="60dp"
+        android:layout_height="80dp"
+        android:background="@drawable/shape_white" >
+
+        <ImageView
+            android:id="@+id/iv_picture09"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/imgloading" />
+
+        <TextView
+            android:id="@+id/tv_dream09"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:alpha="0.8"
+            android:background="@color/yellow_ffe9a4"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="2"
+            android:minHeight="20dp"
+            android:padding="2dp"
+            android:text="好好学习，天天向上"
+            android:textColor="@color/black"
+            android:textSize="5sp" />
+
+        <ImageView
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="3dp"
+            android:src="@drawable/icon_collect_picture_red" />
+    </RelativeLayout>
+
+</RelativeLayout>

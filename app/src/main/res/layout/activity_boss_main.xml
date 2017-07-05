@@ -1,0 +1,165 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv_empty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/red_fd3c49" />
+    <!-- <LinearLayout -->
+    <!-- android:layout_width="match_parent" -->
+    <!-- android:layout_height="match_parent" -->
+    <!-- android:orientation="vertical" > -->
+
+
+    <!-- <com.loosoo100.campus100.view.MyViewPager -->
+    <!-- android:id="@+id/viewPager_main" -->
+    <!-- android:layout_width="match_parent" -->
+    <!-- android:layout_height="0dp" -->
+    <!-- android:layout_weight="1" /> -->
+
+
+    <!-- <include layout="@layout/menubar_below" /> -->
+    <!-- </LinearLayout> -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <FrameLayout
+            android:id="@+id/fl_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="48dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/none_color"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size_line"
+                android:background="@color/line_below" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_menuBar"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:id="@+id/rl_home"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/height_menuBar"
+                    android:layout_weight="1"
+                    android:background="@android:color/white"
+                    android:clickable="true" >
+
+                    <ImageView
+                        android:id="@+id/iv_home"
+                        android:layout_width="@dimen/size_iconBelow"
+                        android:layout_height="@dimen/size_iconBelow"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/space_iconBelow"
+                        android:background="@drawable/recommend_select" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="2dp"
+                        android:text="推荐"
+                        android:textSize="10sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_message"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/height_menuBar"
+                    android:layout_weight="1"
+                    android:background="@android:color/white"
+                    android:clickable="true" >
+
+                    <RelativeLayout
+                        android:layout_width="30dp"
+                        android:layout_height="@dimen/height_menuBar"
+                        android:layout_centerHorizontal="true" >
+
+                        <ImageView
+                            android:id="@+id/iv_message"
+                            android:layout_width="@dimen/size_iconBelow"
+                            android:layout_height="@dimen/size_iconBelow"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginTop="@dimen/space_iconBelow"
+                            android:background="@drawable/message" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_marginBottom="2dp"
+                            android:text="消息"
+                            android:textSize="10sp"
+                            android:textStyle="bold" />
+
+                        <!--<ImageView-->
+                            <!--android:id="@+id/iv_circle"-->
+                            <!--android:layout_width="6dp"-->
+                            <!--android:layout_height="6dp"-->
+                            <!--android:layout_alignParentRight="true"-->
+                            <!--android:layout_alignParentTop="true"-->
+                            <!--android:layout_marginTop="5dp"-->
+                            <!--android:background="@drawable/shape_circle_red"-->
+                            <!--android:visibility="gone" />-->
+
+                        <com.loosoo100.campus100.chat.widget.DragPointView
+                            android:id="@+id/unread_num"
+                            android:layout_width="19dp"
+                            android:layout_height="19dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_gravity="right"
+                            android:textColor="@android:color/white"
+                            android:textSize="12sp"
+                            android:visibility="invisible" />
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_personal"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/height_menuBar"
+                    android:layout_weight="1"
+                    android:background="@android:color/white"
+                    android:clickable="true" >
+
+                    <ImageView
+                        android:id="@+id/iv_personal"
+                        android:layout_width="@dimen/size_iconBelow"
+                        android:layout_height="@dimen/size_iconBelow"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="@dimen/space_iconBelow"
+                        android:background="@drawable/personal" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginBottom="2dp"
+                        android:text="@string/personal"
+                        android:textSize="10sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

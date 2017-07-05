@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv_empty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/red_fd3c49" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_menuBar"
+        android:background="@color/red_fd3c49">
+
+        <RelativeLayout
+            android:id="@+id/rl_back"
+            android:layout_width="@dimen/height_menuBar"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="19dp"
+                android:layout_height="19dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/icon_back_white" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:layout_marginTop="55dp"
+            android:text="领取礼物"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/textsize_topbar" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="360dp"
+            android:background="@color/white">
+
+            <ImageView
+                android:id="@+id/iv_goodsIcon"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/imgloading" />
+
+            <Button
+                android:id="@+id/btn_get"
+                android:layout_width="250dp"
+                android:layout_height="40dp"
+                android:text="领取礼物"
+                android:textColor="@color/white"
+                android:background="@drawable/shape_nocolor_white"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+
+        <!--<RelativeLayout-->
+            <!--android:layout_width="90dp"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:layout_marginTop="360dp"-->
+            <!--android:background="@drawable/gift_get_red">-->
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="90dp"
+                android:layout_height="wrap_content"
+                android:text="昵称"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:paddingBottom="30dp"
+                android:gravity="center"
+                android:paddingTop="50dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="360dp"
+                android:background="@drawable/gift_get_red"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+        <!--</RelativeLayout>-->
+
+        <com.loosoo100.campus100.view.CircleView
+            android:id="@+id/cv_headshot"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="315dp"
+            android:src="@drawable/imgloading"
+            app:border_color="@color/white"
+            app:border_width="2dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="45dp"
+            android:src="@drawable/gift_get_text" />
+
+        <include layout="@layout/progress"
+            android:id="@+id/progress"
+            android:visibility="gone"
+            />
+
+        <include layout="@layout/progress_update_whitebg"
+            android:id="@+id/progress_update_whitebg"
+            android:visibility="gone"
+            />
+    </RelativeLayout>
+
+</LinearLayout>

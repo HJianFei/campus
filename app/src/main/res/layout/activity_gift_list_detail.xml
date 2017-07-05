@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/iv_empty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_menuBar"
+        android:background="@color/white"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/rl_back"
+            android:layout_width="@dimen/height_menuBar"
+            android:layout_height="match_parent" >
+
+            <ImageView
+                android:layout_width="19dp"
+                android:layout_height="19dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/icon_back_red" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <EditText
+                android:id="@+id/et_search"
+                android:layout_width="match_parent"
+                android:layout_height="28dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/shape_gray_stoke"
+                android:hint="防晒"
+                android:paddingLeft="40dp"
+                android:paddingRight="35dp"
+                android:singleLine="true"
+                android:textColorHint="@color/gray_d0d0d0"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/icon_search_gray" />
+            
+             <Button
+                android:id="@+id/btn_delete"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@color/none_color"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="X"
+                android:visibility="gone"
+                android:textColor="@color/gray_3e3e3e" />
+        </RelativeLayout>
+        <!-- <ImageView -->
+        <!-- android:layout_width="15dp" -->
+        <!-- android:layout_height="15dp" -->
+        <!-- android:background="@drawable/icon_search_gray" /> -->
+
+
+        <!-- <TextView -->
+        <!-- android:id="@+id/tv_search" -->
+        <!-- android:layout_width="wrap_content" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:layout_marginLeft="5dp" -->
+        <!-- android:text="防晒" -->
+        <!-- android:textColor="@color/gray_d0d0d0" -->
+        <!-- android:textSize="14sp" /> -->
+
+        <RelativeLayout
+            android:id="@+id/rl_message"
+            android:layout_width="@dimen/height_menuBar"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true" >
+
+            <ImageView
+                android:layout_width="19dp"
+                android:layout_height="19dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/icon_search_red" />
+
+            <!-- <ImageView -->
+            <!-- android:id="@+id/iv_message" -->
+            <!-- android:layout_width="19dp" -->
+            <!-- android:layout_height="19dp" -->
+            <!-- android:layout_centerInParent="true" -->
+            <!-- android:background="@color/white" -->
+            <!-- android:src="@drawable/icon_message_red" /> -->
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/size_line_small"
+        android:background="@color/gray_d0d0d0" />
+
+    <LinearLayout
+        android:id="@+id/ll_root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_order_fourbar" >
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+
+                <Button
+                    android:id="@+id/btn_all"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="3dp"
+                    android:background="@color/none_color"
+                    android:gravity="center"
+                    android:text="综合"
+                    android:textColor="@color/red_fd3c49"
+                    android:textSize="@dimen/textsize_order_four" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+
+                <Button
+                    android:id="@+id/btn_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="3dp"
+                    android:background="@color/none_color"
+                    android:gravity="center"
+                    android:text="价格"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textsize_order_four" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+
+                <Button
+                    android:id="@+id/btn_sold"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="3dp"
+                    android:background="@color/none_color"
+                    android:gravity="center"
+                    android:text="销量"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textsize_order_four" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" >
+
+                <Button
+                    android:id="@+id/btn_new"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="3dp"
+                    android:background="@color/none_color"
+                    android:gravity="center"
+                    android:text="最新"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/textsize_order_four" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_redline"
+            android:layout_width="20dp"
+            android:layout_height="3dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/red_fd3c49" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <!-- <com.loosoo100.campus100.view.pulltorefresh.PtrLayout -->
+        <!-- android:id="@+id/refresh" -->
+        <!-- android:layout_width="match_parent" -->
+        <!-- android:layout_height="match_parent" > -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="暂无数据"
+            android:textColor="@color/gray_3e3e3e"
+            android:textSize="14sp" />
+
+        <GridView
+            android:id="@+id/gv_gift_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/gray_f8f8f8"
+            android:horizontalSpacing="11dp"
+            android:listSelector="@color/none_color"
+            android:numColumns="2"
+            android:paddingLeft="11dp"
+            android:paddingRight="11dp"
+            android:scrollbars="none"
+            android:verticalSpacing="11dp" />
+        <!-- </com.loosoo100.campus100.view.pulltorefresh.PtrLayout> -->
+
+        <include
+            android:id="@+id/rl_pb"
+            layout="@layout/progress"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</LinearLayout>

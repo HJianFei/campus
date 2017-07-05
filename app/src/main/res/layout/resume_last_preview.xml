@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="70dp"
+        android:layout_height="24dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/shape_red"
+        android:gravity="center"
+        android:text="个人评价"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="86dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/shape_none_stoke_white"
+        android:gravity="top"
+        android:padding="5dp"
+        android:text="我是一头牛"
+        android:textColor="@color/black"
+        android:textSize="12sp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="39dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/selector_btn_red"
+        android:text="保存至相册"
+        android:textColor="@color/white" />
+
+</LinearLayout>
