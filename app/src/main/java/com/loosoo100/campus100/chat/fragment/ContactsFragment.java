@@ -28,7 +28,6 @@ import com.android.volley.toolbox.StringRequest;
 import com.google.gson.Gson;
 import com.loosoo100.campus100.R;
 import com.loosoo100.campus100.anyevent.MEventAddFriendNoRead;
-import com.loosoo100.campus100.anyevent.MEventMessageNoRead;
 import com.loosoo100.campus100.application.MyApplication;
 import com.loosoo100.campus100.chat.bean.Friend;
 import com.loosoo100.campus100.chat.bean.FriendInfo;
